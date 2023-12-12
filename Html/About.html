@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Hyderabad IT Trainings | #1 Software Training Institute in Hyderabad
+    </title>
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="pulgin/owl/dist/assets/owl.carousel.min.css" />
+
+    <!-- --------Favicon----------- -->
+    <link
+      rel="shortcut icon"
+      href="/assects/logo/favicon hyderabad logo.jpg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/beca117790.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="container-fluid header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mt-lg-3">
+            <ul
+              class="row align-items-center list-unstyled justify-content-around"
+            >
+              <li class="col-lg-5 p-0">
+                <i class="fa-solid fa-envelope"></i
+                >info@hyderabadittrainings.com
+              </li>
+              <li class="col-lg-5 p-0">
+                <i class="fa-solid fa-phone"></i>+91 81439 56849
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-lg-3">
+            <ul
+              class="d-flex gap-3 list-unstyled m-0 justify-content-lg-end align-items-center"
+            >
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- nav-bar started -->
+    <section class="container-fluid position-relative">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a href="#" class="navbar-brand">
+            <img src="/assects/logo/It Logo.jpg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            data-bs-target="#myNav"
+            data-bs-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="myNav">
+            <ul class="navbar nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="placement-nav">Placements</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Student Zone</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- javascript and jquery section -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="pulgin/owl/dist/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="pulgin/count-up-me/res/countMe/countMe.min.js"></script>
+    <script>
+      window.onload = () => {
+        // $(selector).countMe(delay,speed)
+        $("#num1").countMe(4, 65);
+        $("#num2").countMe(0, 0);
+        $("#num3").countMe(0, 0);
+        $("#num4").countMe(0, 0);
+      };
+
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          slide: 1,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+
+        $(".owl-prev").append('<i class="fa-solid fa-chevron-left"></i>');
+        $(".owl-next").append('<i class="fa-solid fa-chevron-right"></i>');
+
+        $("#place-menu").hide();
+
+        $("#placement-nav").on({
+          mouseover: function () {
+            $("#place-menu").toggle();
+          },
+          // mouseleave:function(){
+
+          //   $('#place-menu').toggle()
+          // },
+
+          click: () => {
+            $("#place-menu").toggle();
+          },
+        });
+      }); //ready bracket
+    </script>
+  </body>
+</html>
